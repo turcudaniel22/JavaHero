@@ -2,7 +2,6 @@ package RPG.Character;
 
 import RPG.Exceptions.InvalidArmorException;
 import RPG.Exceptions.InvalidWeaponException;
-import RPG.HeroAttribute.PrimaryAttribute;
 import RPG.Item.Armor;
 import RPG.Item.Item;
 import RPG.Item.Slot;
@@ -14,9 +13,9 @@ public abstract class Character {
     private final String name;
     private int level;
     private double characterDamage;
-    private PrimaryAttribute basePrimaryAttributes;
-    private PrimaryAttribute totalPrimaryAttributes;
-    private HashMap<Slot, Item> equipment;
+    private final PrimaryAttribute basePrimaryAttributes;
+    private final PrimaryAttribute totalPrimaryAttributes;
+    private final HashMap<Slot, Item> equipment;
 
     //constructor
     public Character(String name, int strength, int dexterity, int intelligence) {

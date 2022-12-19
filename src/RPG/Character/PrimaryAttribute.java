@@ -1,4 +1,4 @@
-package RPG.HeroAttribute;
+package RPG.Character;
 
 public class PrimaryAttribute {
     private int strength;
