@@ -6,14 +6,13 @@ import RPG.Item.Armor;
 import RPG.Item.Item;
 import RPG.Item.Slot;
 import RPG.Item.Weapon;
-
 import java.util.HashMap;
 
 public abstract class Character {
     //fields
     private final String name;
     private int level;
-    private double characterDPS;
+    private double characterDamage;
     private PrimaryAttribute basePrimaryAttributes;
     private PrimaryAttribute totalPrimaryAttributes;
     private HashMap<Slot, Item> equipment;
@@ -55,7 +54,7 @@ public abstract class Character {
     }
 
     public double getCharacterDPS() {
-        return characterDPS;
+        return characterDamage;
     }
 
     //setters
@@ -79,9 +78,9 @@ public abstract class Character {
               // if weapon slot is not empty
         if (this.equipment.get(Slot.WEAPON) != null) {
             double weaponDPS = ((Weapon) this.equipment.get(Slot.WEAPON)).getDPS();
-            this.characterDPS = weaponDPS * (1 + (mainAttribute / 100));
+            this.characterDamage = weaponDPS * (1 + (mainAttribute / 100));
         } else {
-            this.characterDPS = (1 + (mainAttribute / 100));
+            this.characterDamage = (1 + (mainAttribute / 100));
         }
     }
 
@@ -144,7 +143,7 @@ public abstract class Character {
                         "Strength = " + this.totalPrimaryAttributes.getStrength() + '\n' +
                         "Dexterity = " + this.totalPrimaryAttributes.getDexterity() + '\n' +
                         "Intelligence = " + this.totalPrimaryAttributes.getIntelligence() + '\n' +
-                        "characterDPS = " + characterDPS).toString();
+                        "characterDPS = " + characterDamage).toString();
 
         System.out.println(charStats);
     }
