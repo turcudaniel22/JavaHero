@@ -1,9 +1,9 @@
 //package RPG.Interface;
 //
-//import RPG.Character.Character.Mage;
-//import RPG.Character.Character.Warrior;
-//import RPG.Character.Character.Rogue;
-//import RPG.Character.Character.Ranger;
+//import RPG.Character.Character.Character.Mage;
+//import RPG.Character.Character.Character.Warrior;
+//import RPG.Character.Character.Character.Rogue;
+//import RPG.Character.Character.Character.Ranger;
 //
 //public class HeroesInterface {
 //    Mage mage = new Mage("mage");

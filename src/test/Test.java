@@ -1,5 +1,6 @@
 package test;
 
+
 import RPG.Character.Mage;
 import RPG.Character.Ranger;
 import RPG.Character.Rogue;

@@ -1,4 +1,4 @@
-package RPG;
+package RPG.Character;
 
 import RPG.Exceptions.InvalidArmorException;
 import RPG.Exceptions.InvalidWeaponException;
