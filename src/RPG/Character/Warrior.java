@@ -1,5 +1,6 @@
 package RPG.Character;
 
+import RPG.Character;
 import RPG.Exceptions.InvalidArmorException;
 import RPG.Exceptions.InvalidWeaponException;
 import RPG.Item.Armor;

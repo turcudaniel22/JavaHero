@@ -1,6 +1,6 @@
 package RPG.Item;
 
-import RPG.Character.PrimaryAttribute;
+import RPG.HeroAttribute.PrimaryAttribute;
 
 public class Armor extends Item {
     private PrimaryAttribute armorAttributes;

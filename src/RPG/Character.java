@@ -1,7 +1,8 @@
-package RPG.Character;
+package RPG;
 
 import RPG.Exceptions.InvalidArmorException;
 import RPG.Exceptions.InvalidWeaponException;
+import RPG.HeroAttribute.PrimaryAttribute;
 import RPG.Item.Armor;
 import RPG.Item.Item;
 import RPG.Item.Slot;
