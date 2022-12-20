@@ -140,6 +140,7 @@ public abstract class Character {
 
         charStats.append(
                 "Character = " + this.getName() + '\n' +
+                        "Class = " + this.getClass().getSimpleName() + '\n' +
                         "level = " + this.getLevel() + '\n' +
                         "Strength = " + this.totalPrimaryAttributes.getStrength() + '\n' +
                         "Dexterity = " + this.totalPrimaryAttributes.getDexterity() + '\n' +
@@ -149,3 +150,4 @@ public abstract class Character {
         System.out.println(charStats);
     }
 }
+
